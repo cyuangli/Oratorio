@@ -3,13 +3,9 @@ import sys
 from src.logger import logging
 from src.exception import CustomException
 from dotenv import load_dotenv
-from supabase import create_client, Client
-load_dotenv()
 
+from supabase import Client
 
-url = os.environ.get("SUPABASE_URL")
-key = os.environ.get("SUPABASE_KEY")
-supabase = create_client(url, key)
 
 
 class TableManager:
